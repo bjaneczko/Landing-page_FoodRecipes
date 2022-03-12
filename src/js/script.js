@@ -1,4 +1,16 @@
-const demo = () => 'Webpack Boilerplate v5.12.1 - SASS/PostCSS, ES6/7, browser sync, source code listing and more.';
+const hamburger = document.querySelector(".hamburger");
+const navMenu = document.querySelector(".nav-menu");
+const navLink = document.querySelectorAll(".nav-link");
 
-// eslint-disable-next-line no-console
-console.log(demo());
+function mobileMenu() {
+  hamburger.classList.toggle("active");
+  navMenu.classList.toggle("active");
+}
+
+function closeMenu() {
+  hamburger.classList.remove("active");
+  navMenu.classList.remove("active");
+}
+navLink.forEach((n) => n.addEventListener("click", closeMenu));
+
+hamburger.addEventListener("click", mobileMenu);
