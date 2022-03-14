@@ -1,5 +1,7 @@
 .header {
-  border-bottom: 1px solid #e2e8f0;
+  max-width: 140rem;
+  margin: 0 auto;
+  font-weight: 700;
 }
 
 .navbar {
@@ -21,21 +23,21 @@
 
 .nav-link {
   font-size: 1.6rem;
-  font-weight: 400;
-  color: #475569;
+  font-weight: 700;
+  color: #292929;
 }
 
 .nav-link:hover {
-  color: #482ff7;
+  color: $primary-green;
 }
 
 .nav-logo {
   font-size: 2.1rem;
-  font-weight: 500;
-  color: #000000;
+  font-weight: 700;
+  color: #292929;
 
   &--green {
-    color: #36b76b;
+    color: $primary-green;
   }
 }
 
@@ -59,22 +61,5 @@
 
   .nav-item {
     margin: 2.5rem 0;
-  }
-
-  .hamburger {
-    display: block;
-    cursor: pointer;
-  }
-
-  .hamburger.active .bar:nth-child(2) {
-    opacity: 0;
-  }
-
-  .hamburger.active .bar:nth-child(1) {
-    transform: translateY(8px) rotate(45deg);
-  }
-
-  .hamburger.active .bar:nth-child(3) {
-    transform: translateY(-8px) rotate(-45deg);
   }
 }
