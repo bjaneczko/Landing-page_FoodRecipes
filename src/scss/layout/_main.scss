@@ -3,3 +3,16 @@
   margin: 0 auto;
   padding: 1rem 1.5rem;
 }
+
+.home {
+  text-align: center;
+  &__container {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    gap: 2rem;
+  }
+
+  &__img {
+    margin: 0 auto;
+  }
+}
