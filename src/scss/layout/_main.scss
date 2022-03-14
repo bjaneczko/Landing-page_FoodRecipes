@@ -1,18 +1,90 @@
 .main {
   max-width: 120rem;
   margin: 0 auto;
-  padding: 1rem 1.5rem;
+  padding: 4rem 0rem;
 }
 
 .home {
   text-align: center;
+  padding: 0rem 5.5rem;
+
   &__container {
     display: grid;
     grid-template-rows: 1fr 1fr;
-    gap: 2rem;
+    gap: 3rem;
+    grid-template-areas:
+      "img"
+      "data";
+  }
+
+  &__data {
+    grid-area: data;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 400;
+    margin-bottom: 1rem;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: $grey;
+    margin-bottom: 2rem;
   }
 
   &__img {
+    width: 50vw;
+    grid-area: img;
     margin: 0 auto;
   }
+}
+
+.food {
+  text-align: center;
+  padding: 2.5rem 5.5rem;
+  background-color: $light-gray;
+  z-index: -1;
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  &__data {
+    grid-area: data;
+  }
+
+  &__title {
+    font-size: 3rem;
+    font-weight: 400;
+  }
+
+  &__text {
+    font-size: 1.4rem;
+    color: $grey;
+  }
+
+  &__img {
+    width: 20rem;
+  }
+}
+
+.food__plates {
+  margin-top: 2rem;
+  position: relative;
+  z-index: 1;
+}
+
+.food__plates::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: -5px;
+  z-index: -10;
+  width: 190px;
+  height: 190px;
+  border-radius: 100%;
+  background: white;
 }
