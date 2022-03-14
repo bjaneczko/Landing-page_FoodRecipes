@@ -1,0 +1,36 @@
+.btn {
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+
+  &--solid {
+    font-size: 1.8rem;
+    font-family: inherit;
+    font-weight: 400;
+    color: $white;
+    background-color: $primary-green;
+    border-radius: 1rem;
+    padding: 1.1rem 3rem;
+
+    &:hover {
+      background-color: $secondary-green;
+    }
+  }
+
+  &--transparent {
+    box-sizing: border-box;
+    font-size: 1.8rem;
+    font-family: inherit;
+    font-weight: 400;
+    color: $primary-green;
+    padding: 1rem 3rem;
+    border: 1px solid $primary-green;
+    border-radius: 1rem;
+    background-color: transparent;
+
+    &:hover {
+      color: $white;
+      background-color: $secondary-green;
+    }
+  }
+}
