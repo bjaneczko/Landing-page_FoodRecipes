@@ -72,13 +72,6 @@
     font-size: 1.4rem;
     color: $grey;
   }
-
-  &__img {
-    max-width: 20vw;
-    &--small {
-      max-width: 20vw;
-    }
-  }
 }
 
 @media only screen and (max-width: 768px) {
@@ -142,38 +135,7 @@
       font-size: 1.4rem;
       color: $grey;
     }
-
-    &__img {
-      max-width: 20vw;
-      &--small {
-        max-width: 20vw;
-      }
-    }
   }
-}
-
-.food__plates {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-}
-
-.food__plate {
-  margin-top: 2rem;
-  position: relative;
-  z-index: 1;
-}
-
-.food__plate::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  top: -8px;
-  z-index: -10;
-  width: 20vw;
-  height: 20vw;
-  border-radius: 100%;
-  background: white;
 }
 
 .mobile-app {
