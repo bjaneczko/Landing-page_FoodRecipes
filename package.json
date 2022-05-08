@@ -3,7 +3,7 @@
   "name": "landing-page_foodrecipes",
   "version": "1.0",
   "description": "FoodRecipes landing page, part of FoodRecipes project in which you can find recipes for yourself",
-  "homepage": "https://github.com/bjaneczko/Landing-page_FoodRecipes#readme",
+  "homepage": "https://github.com/bjaneczko/Landing-page_FoodRecipes",
   "browserslist": [
     "last 2 versions",
     "> 5%"
