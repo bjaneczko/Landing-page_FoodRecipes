@@ -1,7 +1,4 @@
 import "../scss/app.scss";
-
-/* Your JS Code goes here */
-
-/* Demo JS */
+import "remixicon/fonts/remixicon.css";
 import "./script.js";
 import "./scrollreveal.min.js";
