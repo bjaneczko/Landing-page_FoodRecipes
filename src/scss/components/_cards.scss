@@ -1,22 +1,22 @@
-.steps {
+.recipes {
+  &__description {
+    text-align: center;
+    margin-bottom: $mb-0-5;
+  }
   &__bg {
-    background-color: $first-color-lighten;
     padding: 3rem 2rem 2rem;
     border-radius: 1rem;
   }
   &__container {
     gap: 2rem;
     padding-top: 1rem;
-  }
-  &__title {
-    color: #fff;
+    grid-template-columns: repeat(3, 1fr);
   }
   &__card {
-    background-color: $container-color;
-    padding: 2.5rem 3rem 2rem 1.5rem;
+    padding: 2.5rem;
     border-radius: 1rem;
 
-    &:hover .steps__card-number {
+    &:hover .recipes__card-number {
       transform: translateY(-0.25rem);
     }
 
