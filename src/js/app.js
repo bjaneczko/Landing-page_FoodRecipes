@@ -1,4 +1,4 @@
 import "../scss/app.scss";
 import "remixicon/fonts/remixicon.css";
-import "./script.js";
+import "./hamburger-menu.js";
 import "./scrollreveal.min.js";
