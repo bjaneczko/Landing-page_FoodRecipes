@@ -26,11 +26,20 @@
   }
 
   &--link {
+    transition: all 0.5s ease;
     color: $first-color;
+    border: 3px solid $first-color;
+    background-color: transparent;
+    padding: 1rem 1.75rem;
+    outline: none;
+    font-family: inherit;
     font-weight: $font-medium;
+    border-radius: 0.5rem;
 
-    &:hover .button__icon {
-      transform: translateX(0.25rem);
+    &:hover {
+      color: #fff;
+      background-color: $first-color-darker;
+      border: 3px solid $first-color-darker;
     }
   }
 }
