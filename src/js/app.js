@@ -4,3 +4,4 @@ import "../scss/app.scss";
 
 /* Demo JS */
 import "./script.js";
+import "./scrollreveal.min.js";
