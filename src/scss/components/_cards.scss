@@ -10,7 +10,8 @@
   &__container {
     gap: 2rem;
     padding-top: 1rem;
-    grid-template-columns: repeat(3, 1fr);
+    justify-content: center;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 280px));
   }
   &__card {
     padding: 2.5rem;
